@@ -6,4 +6,7 @@ node_modules
 npm-debug.log
 bin
 CHANGELOG.md
-.sass-cache
+scss
+package.json
+gulpfile.js
+images/old
