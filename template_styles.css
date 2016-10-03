@@ -532,8 +532,10 @@ footer .footer-third-menu .footer-social {
    transition: all 0.4s;
 }
 
-.main-slider div[class*="slide-solution-"] div:hover,
-      .solutions-page-box div[class*="slide-solution-"] div:hover {
+.main-slider div[class*="slide-solution-"] div:hover, .main-slider div[class*="slide-solution-"] div:focus, .main-slider div[class*="slide-solution-"] div:active,
+      .solutions-page-box div[class*="slide-solution-"] div:hover,
+      .solutions-page-box div[class*="slide-solution-"] div:focus,
+      .solutions-page-box div[class*="slide-solution-"] div:active {
    content: "";
    display: block;
    width: 100%;
@@ -1438,7 +1440,7 @@ button.kr-btn:hover, button.kr-btn:active, button.kr-btn:focus {
    }
 
    .solutions-page-box div[class*="slide-solution-"] div {
-      padding: 70px 35px 0;
+      padding: 60px 35px 0;
    }
 
    .solutions-page-box div[class*="slide-solution-"] h4, .solutions-page-box div[class*="slide-solution-"] p, .solutions-page-box div[class*="slide-solution-"] a {
