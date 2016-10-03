@@ -1382,25 +1382,34 @@ button.kr-btn:hover, button.kr-btn:active, button.kr-btn:focus {
       height: 260px;
    }
 
-   .main-slider div[class*="slide-solution-"] {
+   .main-slider div[class*="slide-solution-"],
+  .solutions-page-box div[class*="slide-solution-"] {
       width: 260px;
       height: 260px;
+      margin-right: 20px;
+      margin-left: 20px;
    }
 
-   .main-slider div[class*="slide-solution-"] div {
+   .main-slider div[class*="slide-solution-"] div,
+    .solutions-page-box div[class*="slide-solution-"] div {
       padding: 50px 20px 0;
    }
 
-   .main-slider div[class*="slide-solution-"] div p, .main-slider div[class*="slide-solution-"] div h4, .main-slider div[class*="slide-solution-"] div .read-more {
+   .main-slider div[class*="slide-solution-"] div p, .main-slider div[class*="slide-solution-"] div h4, .main-slider div[class*="slide-solution-"] div .read-more,
+      .solutions-page-box div[class*="slide-solution-"] div p,
+      .solutions-page-box div[class*="slide-solution-"] div h4,
+      .solutions-page-box div[class*="slide-solution-"] div .read-more {
       font-size: 95%;
       line-height: 1.1;
    }
 
-   .main-slider .slick-prev {
+   .main-slider .slick-prev,
+  .solutions-page-box .slick-prev {
       left: -15px;
    }
 
-   .main-slider .slick-next {
+   .main-slider .slick-next,
+  .solutions-page-box .slick-next {
       right: -15px;
    }
 
@@ -1431,20 +1440,5 @@ button.kr-btn:hover, button.kr-btn:active, button.kr-btn:focus {
       padding-bottom: 6px;
       display: block;
    }
-
-   .solutions-page-box div[class*="slide-solution-"] {
-      width: 280px;
-      height: 280px;
-      margin-right: auto;
-      margin-left: auto;
-   }
-
-   .solutions-page-box div[class*="slide-solution-"] div {
-      padding: 60px 35px 0;
-   }
-
-   .solutions-page-box div[class*="slide-solution-"] h4, .solutions-page-box div[class*="slide-solution-"] p, .solutions-page-box div[class*="slide-solution-"] a {
-      font-size: 90%;
-      line-height: 1.1;
-   }
+  /*    .solutions-page-box {        div[class*="slide-solution-"] {            width: 280px;            height: 280px;            margin-right: auto;            margin-left: auto;            div {                padding: 50px 20px 0;            }            h4, p, a {                font-size: 95%;                line-height: 1.1;            }        }    }    */;
 }
