@@ -1392,6 +1392,8 @@ button.kr-btn:hover, button.kr-btn:active, button.kr-btn:focus {
 
    .main-slider div[class*="slide-solution-"] div,
     .solutions-page-box div[class*="slide-solution-"] div {
+      position: relative;
+      z-index: 10;
       padding: 50px 20px 0;
    }
 
@@ -1440,5 +1442,4 @@ button.kr-btn:hover, button.kr-btn:active, button.kr-btn:focus {
       padding-bottom: 6px;
       display: block;
    }
-  /*    .solutions-page-box {        div[class*="slide-solution-"] {            width: 280px;            height: 280px;            margin-right: auto;            margin-left: auto;            div {                padding: 50px 20px 0;            }            h4, p, a {                font-size: 95%;                line-height: 1.1;            }        }    }    */;
 }
