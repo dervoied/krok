@@ -3,8 +3,6 @@
 body {
    font-family: Circe, Arial, sans-serif;
    font-weight: 300;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
    color: #000000;
 }
 
