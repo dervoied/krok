@@ -1,0 +1,29 @@
+.company-box {
+    .testimonials-card {
+        position: relative;
+        padding: 10px;
+        height: 100%;
+        box-shadow: none;
+        transition: box-shadow 0.2s;
+        &:hover {
+            box-shadow: inset 0 0 0 2px $green-link;
+            cursor: default;
+        }
+    }
+}
+
+#accordion-partners {
+    .panel {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        .well {
+            border: $line-green;
+            border-radius: 0;
+            background: #ffffff;
+        }
+    }
+}
+
+
+
