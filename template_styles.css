@@ -1564,6 +1564,51 @@ label.kr-radio-label {
    background: #0db14b;
 }
 
+/* Social list */
+.social-links {
+   position: relative;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.social-links li {
+   width: 35px;
+   height: 35px;
+   float: left;
+}
+
+.social-links li a {
+   position: absolute;
+   width: 35px;
+   height: 35px;
+}
+
+.social-links li:nth-of-type(1) a {
+   background: url("images/instagram-ico.png") no-repeat;
+   background-size: contain;
+}
+
+.social-links li:nth-of-type(2) a {
+   background: url("images/facebook-icon.png") no-repeat;
+   background-size: contain;
+}
+
+.social-links li:nth-of-type(3) a {
+   background: url("images/twitter-ico.png") no-repeat;
+   background-size: contain;
+}
+
+.social-links li:nth-of-type(4) a {
+   background: url("images/youtube-icon.png") no-repeat;
+   background-size: contain;
+}
+
+.social-links li:nth-of-type(5) a {
+   background: url("images/habr-ico.jpg") no-repeat;
+   background-size: contain;
+}
+
 /* REUSABLE GLOBAL COMPONENTS */
 .light {
    font-weight: 300;
