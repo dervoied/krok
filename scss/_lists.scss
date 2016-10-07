@@ -9,14 +9,14 @@
 }
 
 .kr-ol-list {
-    counter-reset: steps-counter;
+    counter-reset: section;
     li {
         position: relative;
         padding-left: 30px;
         padding-bottom: 5px;
         &:before {
-            content: counter(steps-counter);
-            counter-increment: steps-counter;
+            counter-increment: section;
+            content: counters(section,".") " ";
             position: absolute;
             left: 0;
             top: 0;
@@ -29,6 +29,21 @@
             height: 20px;
             text-align: center;
             border-radius: 50%;
+        }
+        & > ul {
+            margin-top: 10px;
+            list-style: none;
+            padding-left: 0;
+            counter-reset: subsection;
+            li:before {
+                counter-increment: subsection;
+                content: counter(section) "." counter(subsection) " ";
+                border: none;
+                background: none;
+                color: $green-link;
+                font-size: 15px;
+                font-weight: 600;
+            }
         }
     }
 }

@@ -90,6 +90,17 @@ a.static-link:hover, a.static-link:focus, a.static-link:active {
    text-decoration: none;
 }
 
+a.dashed-link-green {
+   color: #0db14b;
+   text-decoration: none;
+   border-bottom: 1px dashed #0db14b;
+   cursor: pointer;
+}
+
+a.dashed-link-green:hover, a.dashed-link-green:focus {
+   color: #008c35;
+}
+
 a.dashed-link {
    color: #000000;
    text-decoration: none;
@@ -1177,6 +1188,50 @@ button.kr-btn.fluid, button.fluid.kr-btn-clear {
    width: 100%;
 }
 
+button.kr-btn-register {
+   color: #27b758;
+   border: 2px solid #27b758;
+   background: #fff;
+   font-size: 17px;
+   line-height: 30px;
+   font-weight: 600;
+   width: 100%;
+   position: relative;
+   left: 0;
+   bottom: 0;
+   top: 24px;
+   height: 34px;
+}
+
+button.kr-btn-register:hover, button.kr-btn-register:active, button.kr-btn-register:focus {
+   background: #0db14b;
+   color: #ffffff;
+}
+
+button.kr-btn-register.fluid {
+   width: 100%;
+}
+
+button.kr-btn-inactive {
+   color: #717171;
+   background: #e5e5e5;
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: 300;
+   width: 237px;
+   height: 49px;
+}
+
+button.kr-btn-inactive:hover, button.kr-btn-inactive:active, button.kr-btn-inactive:focus {
+   color: #717171;
+   background: #e5e5e5;
+   cursor: default;
+}
+
+button.kr-btn-inactive.fluid {
+   width: 100%;
+}
+
 button.kr-btn-clear {
    background: #ffffff;
    border: 2px solid #e0f57a;
@@ -1227,8 +1282,7 @@ select.kr-select::-ms-expand {
 }
 
 /* Checkbox and radio */
-input[type="checkbox"].kr-checkbox,
-input[type=radio].kr-radio {
+input[type="checkbox"], input[type="radio"] {
    position: absolute;
    z-index: -1000;
    left: -1000px;
@@ -1241,10 +1295,9 @@ input[type=radio].kr-radio {
    border: 0;
 }
 
-input[type="checkbox"].kr-checkbox + label.kr-check-label,
-  input[type="checkbox"].kr-checkbox + label.kr-radio-label,
-  input[type=radio].kr-radio + label.kr-check-label,
-  input[type=radio].kr-radio + label.kr-radio-label {
+input[type="checkbox"] + label.kr-check-label,
+  input[type="checkbox"] + label.kr-radio-label, input[type="radio"] + label.kr-check-label,
+  input[type="radio"] + label.kr-radio-label {
    padding-left: 30px;
    height: 20px;
    display: inline-block;
@@ -1257,39 +1310,34 @@ input[type="checkbox"].kr-checkbox + label.kr-check-label,
    font-weight: 300;
 }
 
-input[type="checkbox"].kr-checkbox + label.kr-check-label:hover,
-    input[type="checkbox"].kr-checkbox + label.kr-radio-label:hover,
-    input[type=radio].kr-radio + label.kr-check-label:hover,
-    input[type=radio].kr-radio + label.kr-radio-label:hover {
+input[type="checkbox"] + label.kr-check-label:hover,
+    input[type="checkbox"] + label.kr-radio-label:hover, input[type="radio"] + label.kr-check-label:hover,
+    input[type="radio"] + label.kr-radio-label:hover {
    color: #0db14b;
 }
 
-input[type="checkbox"].kr-checkbox + label.kr-check-label.label-static:hover,
-    input[type="checkbox"].kr-checkbox + label.kr-radio-label.label-static:hover,
-    input[type=radio].kr-radio + label.kr-check-label.label-static:hover,
-    input[type=radio].kr-radio + label.kr-radio-label.label-static:hover {
+input[type="checkbox"] + label.kr-check-label.label-static:hover,
+    input[type="checkbox"] + label.kr-radio-label.label-static:hover, input[type="radio"] + label.kr-check-label.label-static:hover,
+    input[type="radio"] + label.kr-radio-label.label-static:hover {
    color: inherit;
 }
 
-input[type="checkbox"].kr-checkbox:checked + label.kr-check-label,
-  input[type="checkbox"].kr-checkbox:checked + label.kr-radio-label,
-  input[type=radio].kr-radio:checked + label.kr-check-label,
-  input[type=radio].kr-radio:checked + label.kr-radio-label {
+input[type="checkbox"]:checked + label.kr-check-label,
+  input[type="checkbox"]:checked + label.kr-radio-label, input[type="radio"]:checked + label.kr-check-label,
+  input[type="radio"]:checked + label.kr-radio-label {
    background-position: 0 -40px;
    font-weight: 600;
 }
 
-input[type="checkbox"].kr-checkbox:checked + label.kr-check-label.label-static,
-    input[type="checkbox"].kr-checkbox:checked + label.kr-radio-label.label-static,
-    input[type=radio].kr-radio:checked + label.kr-check-label.label-static,
-    input[type=radio].kr-radio:checked + label.kr-radio-label.label-static {
+input[type="checkbox"]:checked + label.kr-check-label.label-static,
+    input[type="checkbox"]:checked + label.kr-radio-label.label-static, input[type="radio"]:checked + label.kr-check-label.label-static,
+    input[type="radio"]:checked + label.kr-radio-label.label-static {
    font-weight: inherit;
 }
 
-input[type="checkbox"].kr-checkbox:disabled + label.kr-check-label,
-  input[type="checkbox"].kr-checkbox:disabled + label.kr-radio-label,
-  input[type=radio].kr-radio:disabled + label.kr-check-label,
-  input[type=radio].kr-radio:disabled + label.kr-radio-label {
+input[type="checkbox"]:disabled + label.kr-check-label,
+  input[type="checkbox"]:disabled + label.kr-radio-label, input[type="radio"]:disabled + label.kr-check-label,
+  input[type="radio"]:disabled + label.kr-radio-label {
    background-position: 0 0;
    cursor: not-allowed;
 }
@@ -1312,6 +1360,18 @@ label.kr-radio-label {
    -moz-user-select: none;
    -ms-user-select: none;
    user-select: none;
+}
+
+.kr-modal .modal-content {
+   border-radius: 0;
+   border: 2px solid #0db14b;
+   position: relative;
+   float: left;
+   width: 100%;
+}
+
+.kr-modal .modal-header {
+   border-bottom: none;
 }
 
 /* REUSABLE SMALL GRAPHICS */
@@ -1429,7 +1489,7 @@ label.kr-radio-label {
 }
 
 .kr-ol-list {
-   counter-reset: steps-counter;
+   counter-reset: section;
 }
 
 .kr-ol-list li {
@@ -1439,8 +1499,8 @@ label.kr-radio-label {
 }
 
 .kr-ol-list li:before {
-   content: counter(steps-counter);
-   counter-increment: steps-counter;
+   counter-increment: section;
+   content: counters(section, ".") " ";
    position: absolute;
    left: 0;
    top: 0;
@@ -1453,6 +1513,23 @@ label.kr-radio-label {
    height: 20px;
    text-align: center;
    border-radius: 50%;
+}
+
+.kr-ol-list li > ul {
+   margin-top: 10px;
+   list-style: none;
+   padding-left: 0;
+   counter-reset: subsection;
+}
+
+.kr-ol-list li > ul li:before {
+   counter-increment: subsection;
+   content: counter(section) "." counter(subsection) " ";
+   border: none;
+   background: none;
+   color: #0db14b;
+   font-size: 15px;
+   font-weight: 600;
 }
 
 /* unordered list */
@@ -1940,6 +2017,59 @@ label.kr-radio-label {
 /* Zoom pointer */
 .pointer-zoom {
    cursor: url("data:image/png;base64,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"), auto;
+}
+
+/* Icons helpers */
+.icon {
+   width: 22px;
+   height: 26px;
+   float: left;
+   margin-right: 15px;
+   background: url("images/icons-iconset.png") no-repeat;
+}
+
+.icon.icon-pdf {
+   background-position: 0 0;
+}
+
+.icon.icon-txt {
+   background-position: -31px 0;
+}
+
+.icon.icon-doc {
+   background-position: -63px 0;
+}
+
+.icon.icon-xls {
+   background-position: -94px 0;
+}
+
+.icon.icon-zip {
+   background-position: -125px 0;
+}
+
+.icon.icon-rar {
+   background-position: -157px 0;
+}
+
+.icon.icon-mp3 {
+   background-position: -189px 0;
+}
+
+.icon.icon-jpg {
+   background-position: -220px 0;
+}
+
+.icon.icon-ppt {
+   background-position: -251px 0;
+}
+
+.icon.icon-mp4 {
+   background-position: -283px 0;
+}
+
+.icon.icon-gif {
+   background-position: -314px 0;
 }
 
 /* BREAKPOINTS */

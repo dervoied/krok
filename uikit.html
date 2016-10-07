@@ -6,6 +6,7 @@
     <title>Техническая страница</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.tokenize.css" />
     <link rel="stylesheet" href="template_styles.css">
 
 
@@ -64,13 +65,13 @@
         <div class="col-md-4">
             <h3>Default</h3>
             <a href="#" class="underline">Читать дальше</a><br/>
-            <a href="#" class="dashed-link">Читать дальше</a>
+            <a href="#" class="dashed-link-green">Читать дальше</a>
         </div>
 
         <div class="col-md-4">
             <h3>Hover</h3>
             <a href="#" class="underline">Читать дальше</a><br/>
-            <a href="#" class="dashed-link">Читать дальше</a>
+            <a href="#" class="dashed-link-green">Читать дальше</a>
         </div>
 
     </div>
@@ -151,30 +152,36 @@
 
             <div class="form-group">
                 <label>Мультиселект</label>
-                <select class="form-control kr-select" multiple>
+                <select multiple="multiple" class="tokenize tokenize-sample">
                     <option value="label1">Label1</option>
                     <option value="label2">Label2</option>
                     <option value="label3">Label3</option>
+                    <option value="label4">Label4</option>
+                    <option value="label5">Label5</option>
+                    <option value="label6">Label6</option>
+                    <option value="label7">Label7</option>
+                    <option value="label8">Label8</option>
+                    <option value="label9">Label9</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <input type="checkbox" id="checkbox1" class="kr-checkbox" checked>
+                <input type="checkbox" id="checkbox1" checked>
                 <label for="checkbox1" class="kr-check-label">Selected Checkbox</label>
             </div>
 
             <div class="form-group">
-                <input type="checkbox" id="checkbox2" class="kr-checkbox">
+                <input type="checkbox" id="checkbox2">
                 <label for="checkbox2" class="kr-check-label">Checkbox</label>
             </div>
 
             <div class="form-group">
-                <input type="radio" id="radio1" class="kr-radio" name="radio" checked>
+                <input type="radio" id="radio1" name="radio" checked>
                 <label for="radio1" class="kr-check-label">Selected Radio Button</label>
             </div>
 
             <div class="form-group">
-                <input type="radio" id="radio2" class="kr-radio" name="radio">
+                <input type="radio" id="radio2" name="radio">
                 <label for="radio2" class="kr-check-label">Radio Button</label>
             </div>
         </div>
@@ -215,12 +222,12 @@
             </div>
 
             <div class="form-group">
-                <input type="checkbox" id="checkbox3" class="kr-checkbox" disabled>
+                <input type="checkbox" id="checkbox3" disabled>
                 <label for="checkbox3" class="kr-check-label">Checkbox:disabled</label>
             </div>
 
             <div class="form-group">
-                <input type="radio" id="radio3" class="kr-radio" name="radio" disabled>
+                <input type="radio" id="radio3" name="radio" disabled>
                 <label for="radio3" class="kr-check-label">Radio Button:disabled</label>
             </div>
         </div>
@@ -234,10 +241,16 @@
 
             <div class="form-group">
                 <label>Мультиселект</label>
-                <select class="form-control kr-select" multiple>
+                <select multiple="multiple" class="tokenize tokenize-sample">
                     <option value="label1">Label1</option>
                     <option value="label2">Label2</option>
                     <option value="label3">Label3</option>
+                    <option value="label4">Label4</option>
+                    <option value="label5">Label5</option>
+                    <option value="label6">Label6</option>
+                    <option value="label7">Label7</option>
+                    <option value="label8">Label8</option>
+                    <option value="label9">Label9</option>
                 </select>
             </div>
 
@@ -256,12 +269,12 @@
             </div>
 
             <div class="form-group">
-                <input type="checkbox" id="checkbox4" class="kr-checkbox">
+                <input type="checkbox" id="checkbox4">
                 <label for="checkbox4" class="kr-check-label">Checkbox</label>
             </div>
 
             <div class="form-group">
-                <input type="radio" id="radio4" class="kr-radio" name="radio">
+                <input type="radio" id="radio4" name="radio">
                 <label for="radio4" class="kr-check-label">Radio Button</label>
             </div>
         </div>
@@ -281,7 +294,7 @@
 
         <div class="col-md-4">
             <h3>Inactive</h3>
-            <button class="kr-btn-clear mar-b-20 mar-t-20 fluid">Задать вопрос</button>
+            <button class="kr-btn-inactive mar-b-20 mar-t-20 fluid">Задать вопрос</button>
         </div>
 
         <div class="col-md-4">
@@ -295,186 +308,257 @@
 
     <!-- Notifications -->
 
-    <div class="row">
+    <h1>Оповещения</h1>
 
-        <h1>Оповещения</h1>
-
-        <p class="success kr-icon-text block mar-t-20"><span class="large normal">Спасибо!
-                            </span><br>
-            Ваша заявка принята.</p>
-        <p class="error kr-icon-text block mar-t-20"><span
-                class="large normal">Ошибка!</span><br>
-            Заполните все поля формы.</p>
-        <p class="info kr-icon-text block mar-t-20"><span class="large normal">Информация
-                            </span><br>
-            Сведения, независимо от формы их представления, воспринимаемые человеком или
-            специальными устройствами как отражение фактов материального мира в процессе
-            коммуникации.</p>
-
-    </div>
+    <p class="success kr-icon-text block mar-t-20"><span class="large normal">Спасибо!
+                        </span><br>
+        Ваша заявка принята.</p>
+    <p class="error kr-icon-text block mar-t-20"><span
+            class="large normal">Ошибка!</span><br>
+        Заполните все поля формы.</p>
+    <p class="info kr-icon-text block mar-t-20"><span class="large normal">Информация
+                        </span><br>
+        Сведения, независимо от формы их представления, воспринимаемые человеком или
+        специальными устройствами как отражение фактов материального мира в процессе
+        коммуникации.</p>
 
     <!-- End notifications -->
 
     <!-- Tabs -->
 
-    <div class="row">
+    <h1>Табы</h1>
 
-        <h1>Табы</h1>
+    <div class="industries-page-box">
 
-        <div class="industries-page-box">
-
-            <ul class="hidden-xs industries-tabs list-unstyled list-inline">
-                <li class="active">
-                    <a class="large normal kr-icon-text industries-tab-1" href="#industries-1"
-                       data-toggle="tab">Общественные
-                        здания<br> и
-                        сооружения</a>
-                </li>
-                <li><a class="large normal kr-icon-text industries-tab-2" href="#industries-2" data-toggle="tab">
-                    Энергетика</a>
-                </li>
-                <li><a class="large normal kr-icon-text industries-tab-3" href="#industries-3" data-toggle="tab">
-                    Промышленность</a>
-                </li>
-                <li><a class="large normal kr-icon-text industries-tab-4" href="#industries-4" data-toggle="tab">Сельское
-                    хозяйство</a>
-                </li>
-            </ul>
-        </div>
-
+        <ul class="hidden-xs industries-tabs list-unstyled list-inline">
+            <li class="active">
+                <a class="large normal kr-icon-text industries-tab-1" href="#industries-1"
+                   data-toggle="tab">Общественные
+                    здания<br> и
+                    сооружения</a>
+            </li>
+            <li><a class="large normal kr-icon-text industries-tab-2" href="#industries-2" data-toggle="tab">
+                Энергетика</a>
+            </li>
+            <li><a class="large normal kr-icon-text industries-tab-3" href="#industries-3" data-toggle="tab">
+                Промышленность</a>
+            </li>
+            <li><a class="large normal kr-icon-text industries-tab-4" href="#industries-4" data-toggle="tab">Сельское
+                хозяйство</a>
+            </li>
+        </ul>
     </div>
 
     <!-- End tabs -->
 
     <!-- Pagination -->
 
-    <div class="row">
-        <h1>Пагинация</h1>
-        <ul class="pagination kr-pagination">
-            <li>
-                <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-                <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <h1>Пагинация</h1>
+    <ul class="pagination kr-pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
 
     <!-- End pagination -->
 
     <!-- File ext -->
 
-    <div class="row">
-        <h1>Обозначения</h1>
+    <h1>Обозначения</h1>
 
-
-    </div>
+    <div class="icon icon-pdf"></div>
+    <div class="icon icon-txt"></div>
+    <div class="icon icon-doc"></div>
+    <div class="icon icon-xls"></div>
+    <div class="icon icon-zip"></div>
+    <div class="icon icon-rar"></div>
+    <div class="icon icon-mp3"></div>
+    <div class="icon icon-jpg"></div>
+    <div class="icon icon-ppt"></div>
+    <div class="icon icon-mp4"></div>
+    <div class="icon icon-gif"></div>
 
     <!-- End file ext -->
 
     <!-- Tables -->
 
-    <div class="row">
-        <h1>Таблица</h1>
-        <table class="table kr-table">
-            <thead>
-            <tr>
-                <th class="first-column">&nbsp;</th>
-                <th>Безопасное управление
-                    денежными средствами
-                </th>
-                <th>Минимизация
-                    рисков
-                </th>
-                <th>Повышение
-                    репутации
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">Защита корпоративных информационных систем
-                    (КИС)
-                    <div class="light">защита от DDoS (Distributed Denial of Service, отказ в
-                        обслуживании);
-                        создание
-                        аутентификационного центра.
-                    </div>
-                </th>
-                <td><span class="kr-icon-text table-check"></span></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">Защита корпоративных информационных систем (КИС)
-                    <div class="light">защита от DDoS (Distributed Denial of Service, отказ в
-                        обслуживании);
-                        создание
-                        аутентификационного центра.
-                    </div>
-                </th>
-                <td><span class="kr-icon-text table-check"></span></td>
-                <td><span class="kr-icon-text table-check"></span></td>
-                <td><span class="kr-icon-text table-check"></span></td>
-            </tr>
-            <tr>
-                <th scope="row">Защита корпоративных информационных систем (КИС)
-                    <div class="light">защита от DDoS (Distributed Denial of Service, отказ в
-                        обслуживании); создание аутентификационного центра.
-                    </div>
-                </th>
-                <td></td>
-                <td><span class="kr-icon-text table-check"></span></td>
-                <td><span class="kr-icon-text table-check"></span></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <h1>Таблица</h1>
+    <table class="table kr-table">
+        <thead>
+        <tr>
+            <th class="first-column">&nbsp;</th>
+            <th>Безопасное управление
+                денежными средствами
+            </th>
+            <th>Минимизация
+                рисков
+            </th>
+            <th>Повышение
+                репутации
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Защита корпоративных информационных систем
+                (КИС)
+                <div class="light">защита от DDoS (Distributed Denial of Service, отказ в
+                    обслуживании);
+                    создание
+                    аутентификационного центра.
+                </div>
+            </th>
+            <td><span class="kr-icon-text table-check"></span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Защита корпоративных информационных систем (КИС)
+                <div class="light">защита от DDoS (Distributed Denial of Service, отказ в
+                    обслуживании);
+                    создание
+                    аутентификационного центра.
+                </div>
+            </th>
+            <td><span class="kr-icon-text table-check"></span></td>
+            <td><span class="kr-icon-text table-check"></span></td>
+            <td><span class="kr-icon-text table-check"></span></td>
+        </tr>
+        <tr>
+            <th scope="row">Защита корпоративных информационных систем (КИС)
+                <div class="light">защита от DDoS (Distributed Denial of Service, отказ в
+                    обслуживании); создание аутентификационного центра.
+                </div>
+            </th>
+            <td></td>
+            <td><span class="kr-icon-text table-check"></span></td>
+            <td><span class="kr-icon-text table-check"></span></td>
+        </tr>
+        </tbody>
+    </table>
 
     <!-- Ent tables -->
 
     <!-- Modals -->
 
-    <div class="row">
-        <h1>Всплывающее окно</h1>
+    <h1>Всплывающее окно</h1>
 
+    <!-- Button trigger modal -->
+    <button class="kr-btn" data-toggle="modal" data-target="#myModal">
+        Показать окно
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade kr-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h1 class="modal-title" id="myModalLabel">Регистрация</h1>
+                </div>
+                <div class="modal-body">
+
+                    <div class="">
+                        <form action="">
+
+                            <div class="form-group col-md-12">
+                                <label for="">ФИО</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Контактный телефон</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Должность</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Адрес электронной почты</label>
+                                <input type="email" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Тип организации</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Наименование организации</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Этам процесса</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Логин</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Сегмент (отрасль)</label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="">Пароль</label>
+                                <input type="password" class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <button type="submit" class="kr-btn-register">Зарегистрироваться</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- End modals -->
 
     <!-- Hover reaction -->
 
-    <div class="row">
-        <h1>Реакция на наведение</h1>
-        <a class="pointer-zoom" data-toggle="modal" data-target="#modal-image">
-            <img srcset="images/doc-thumb-@2x.png 2x,
-                                         images/doc-thumb-@1x.png 1x" src="images/project2-@1x.png" alt="Документ">
-        </a>
+    <h1>Реакция на наведение</h1>
+    <a class="pointer-zoom" data-toggle="modal" data-target="#modal-image">
+        <img srcset="images/doc-thumb-@2x.png 2x,
+                                     images/doc-thumb-@1x.png 1x" src="images/project2-@1x.png" alt="Документ">
+    </a>
 
-        <div class="modal modal-fullscreen" id="modal-image" tabindex="-1">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
+    <div class="modal modal-fullscreen" id="modal-image" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
 
-                        <img class="img-responsive center-block" src="images/doc-fullscreen.png"
-                             alt="Документ"/>
-
-                    </div>
+                    <img class="img-responsive center-block" src="images/doc-fullscreen.png"
+                         alt="Документ"/>
 
                 </div>
+
             </div>
         </div>
     </div>
@@ -483,222 +567,219 @@
 
     <!-- Accordion -->
 
+    <h1>Аккордеон</h1>
     <div class="row">
-        <h1>Аккордеон</h1>
-        <div class="row">
 
-            <form class="centered-form-modal col-md-2">
-                <div class="kr-accordion-project">
-                    <p class="large normal mar-b-20">
-                        <a class="black-link noline kr-icon-text arrow-up-down" data-toggle="collapse"
-                           href="#acc-projects-modal-1">Направление
-                            деятельности</a>
+        <form class="centered-form-modal col-md-2">
+            <div class="kr-accordion-project">
+                <p class="large normal mar-b-20">
+                    <a class="black-link noline kr-icon-text arrow-up-down" data-toggle="collapse"
+                       href="#acc-projects-modal-1">Направление
+                        деятельности</a>
+                </p>
+                <div class="collapse in" id="acc-projects-modal-1">
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-1"/>
+                        <label for="checkbox-modal-1" class="kr-check-label">Инженерные решения</label>
                     </p>
-                    <div class="collapse in" id="acc-projects-modal-1">
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-1" class="kr-checkbox"/>
-                            <label for="checkbox-modal-1" class="kr-check-label">Инженерные решения</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-2" class="kr-checkbox"/>
-                            <label for="checkbox-modal-2" class="kr-check-label">Промышленне решения</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-3" class="kr-checkbox"/>
-                            <label for="checkbox-modal-3" class="kr-check-label">Решения для малой энергетики</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-4" class="kr-checkbox"/>
-                            <label for="checkbox-modal-4" class="kr-check-label">Безопасность зданий
-                                и промышленности</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-5" class="kr-checkbox"/>
-                            <label for="checkbox-modal-5" class="kr-check-label">Сервис и аудит</label>
-                        </p>
-                    </div>
-                    <br>
-
-                    <p class="large normal mar-b-20">
-                        <a class="black-link noline kr-icon-text arrow-up-down collapsed" data-toggle="collapse"
-                           href="#acc-projects-modal-2">Отрасль</a>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-2"/>
+                        <label for="checkbox-modal-2" class="kr-check-label">Промышленне решения</label>
                     </p>
-                    <div class="collapse" id="acc-projects-modal-2">
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-6" class="kr-checkbox"/>
-                            <label for="checkbox-modal-6" class="kr-check-label">Машиностроение</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-7" class="kr-checkbox"/>
-                            <label for="checkbox-modal-7" class="kr-check-label">Химия и нефтехимия</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-8" class="kr-checkbox"/>
-                            <label for="checkbox-modal-8" class="kr-check-label">Нефть и газ</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="checkbox-modal-9" class="kr-checkbox"/>
-                            <label for="checkbox-modal-9" class="kr-check-label">Металлургия</label>
-                        </p>
-                    </div>
-                    <br>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-3"/>
+                        <label for="checkbox-modal-3" class="kr-check-label">Решения для малой энергетики</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-4"/>
+                        <label for="checkbox-modal-4" class="kr-check-label">Безопасность зданий
+                            и промышленности</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-5"/>
+                        <label for="checkbox-modal-5" class="kr-check-label">Сервис и аудит</label>
+                    </p>
                 </div>
+                <br>
 
-                <div class="form-group">
-                    <label for="projects-form-region-modal">Регион</label>
-                    <select class="form-control kr-select" id="projects-form-region-modal">
-                        <option>Алтайский край</option>
-                        <option>Приморский край</option>
-                    </select>
+                <p class="large normal mar-b-20">
+                    <a class="black-link noline kr-icon-text arrow-up-down collapsed" data-toggle="collapse"
+                       href="#acc-projects-modal-2">Отрасль</a>
+                </p>
+                <div class="collapse" id="acc-projects-modal-2">
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-6"/>
+                        <label for="checkbox-modal-6" class="kr-check-label">Машиностроение</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-7"/>
+                        <label for="checkbox-modal-7" class="kr-check-label">Химия и нефтехимия</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-8"/>
+                        <label for="checkbox-modal-8" class="kr-check-label">Нефть и газ</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="checkbox-modal-9"/>
+                        <label for="checkbox-modal-9" class="kr-check-label">Металлургия</label>
+                    </p>
                 </div>
-                <div class="form-group">
-                    <label for="projects-form-name-modal">Название проекта</label>
-                    <input type="text" class="form-control" id="projects-form-name-modal">
+                <br>
+            </div>
+
+            <div class="form-group">
+                <label for="projects-form-region-modal">Регион</label>
+                <select class="form-control kr-select" id="projects-form-region-modal">
+                    <option>Алтайский край</option>
+                    <option>Приморский край</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="projects-form-name-modal">Название проекта</label>
+                <input type="text" class="form-control" id="projects-form-name-modal">
+            </div>
+
+
+            <button type="submit" class="kr-btn mar-b-20 mar-t-20 fluid">Применить</button>
+
+            <p><a href="#">Сбросить фильтр</a></p>
+
+        </form>
+
+    </div>
+
+    <div id="accordion-partners">
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-3 col-xs-6 mar-b-30">
+                    <a role="button" data-toggle="collapse" href="#partners-desc-1"
+                       data-parent="#accordion-partners">
+                        <img class="center-block img-responsive" srcset="images/project2-@2x.png 2x,
+                                     images/project2-@1x.png 1x" src="images/project2-@1x.png" alt=""/>
+                    </a>
                 </div>
-
-
-                <button type="submit" class="kr-btn mar-b-20 mar-t-20 fluid">Применить</button>
-
-                <p><a href="#">Сбросить фильтр</a></p>
-
-            </form>
-
-        </div>
-
-        <div id="accordion-partners">
-            <div class="panel">
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6 mar-b-30">
-                        <a role="button" data-toggle="collapse" href="#partners-desc-1"
-                           data-parent="#accordion-partners">
-                            <img class="center-block img-responsive" srcset="images/project2-@2x.png 2x,
-                                         images/project2-@1x.png 1x" src="images/project2-@1x.png" alt=""/>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 mar-b-30">
-                        <a role="button" data-toggle="collapse" href="#partners-desc-2"
-                           data-parent="#accordion-partners">
-                            <img class="center-block img-responsive" srcset="images/project1-@2x.png 2x,
-                                         images/project1-@1x.png 1x" src="images/project1-@1x.png" alt=""/>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 mar-b-30">
-                        <a role="button" data-toggle="collapse" href="#partners-desc-3"
-                           data-parent="#accordion-partners">
-                            <img class="center-block img-responsive" srcset="images/project3-@2x.png 2x,
-                                         images/project3-@1x.png 1x" src="images/project3-@1x.png" alt=""/>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 mar-b-30">
-                        <a role="button" data-toggle="collapse" href="#partners-desc-4"
-                           data-parent="#accordion-partners">
-                            <img class="center-block img-responsive" srcset="images/project2-@2x.png 2x,
-                                         images/project2-@1x.png 1x" src="images/project2-@1x.png" alt=""/>
-                        </a>
-                    </div>
+                <div class="col-sm-3 col-xs-6 mar-b-30">
+                    <a role="button" data-toggle="collapse" href="#partners-desc-2"
+                       data-parent="#accordion-partners">
+                        <img class="center-block img-responsive" srcset="images/project1-@2x.png 2x,
+                                     images/project1-@1x.png 1x" src="images/project1-@1x.png" alt=""/>
+                    </a>
                 </div>
-
-                <div class="panel-collapse collapse" id="partners-desc-1">
-                    <div class="well kr-partner-well">
-                        <p><a class="bold" href="#">Cummins, Inc</a> — работает на российском ИТ-рынке с 1992
-                            года.
-                            Компетенция
-                            компании — все элементы информационной, телекоммуникационной и инженерной
-                            инфраструктуры
-                            и
-                            интеграционные связи
-                            между ними.</p>
-                        <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
-                            построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
-                            поставщиков
-                            в
-                            области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
-                            2012
-                            г.).
-                        <p>
-
-                            <ul class="kr-ul-list mar-b-0">
-                        <p class="normal">Статус:</p>
-                        <li>Официальный партнер с 2007 года</li>
-                        </ul>
-                    </div>
+                <div class="col-sm-3 col-xs-6 mar-b-30">
+                    <a role="button" data-toggle="collapse" href="#partners-desc-3"
+                       data-parent="#accordion-partners">
+                        <img class="center-block img-responsive" srcset="images/project3-@2x.png 2x,
+                                     images/project3-@1x.png 1x" src="images/project3-@1x.png" alt=""/>
+                    </a>
                 </div>
-                <div class="panel-collapse collapse" id="partners-desc-2">
-                    <div class="well kr-partners-well">
-                        <p><a class="bold" href="#">Yandex</a> — работает на российском ИТ-рынке с 1992
-                            года.
-                            Компетенция
-                            компании — все элементы информационной, телекоммуникационной и инженерной
-                            инфраструктуры
-                            и
-                            интеграционные связи
-                            между ними.</p>
-                        <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
-                            построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
-                            поставщиков
-                            в
-                            области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
-                            2012
-                            г.).
-                        <p>
-
-                            <ul class="kr-ul-list mar-b-0">
-                        <p class="normal">Статус:</p>
-                        <li>Официальный партнер с 2007 года</li>
-                        </ul>
-                    </div>
+                <div class="col-sm-3 col-xs-6 mar-b-30">
+                    <a role="button" data-toggle="collapse" href="#partners-desc-4"
+                       data-parent="#accordion-partners">
+                        <img class="center-block img-responsive" srcset="images/project2-@2x.png 2x,
+                                     images/project2-@1x.png 1x" src="images/project2-@1x.png" alt=""/>
+                    </a>
                 </div>
-                <div class="panel-collapse collapse" id="partners-desc-3">
-                    <div class="well kr-partner-well">
-                        <p><a class="bold" href="#">Google</a> — работает на российском ИТ-рынке с 1992
-                            года.
-                            Компетенция
-                            компании — все элементы информационной, телекоммуникационной и инженерной
-                            инфраструктуры
-                            и
-                            интеграционные связи
-                            между ними.</p>
-                        <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
-                            построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
-                            поставщиков
-                            в
-                            области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
-                            2012
-                            г.).
-                        <p>
+            </div>
 
-                            <ul class="kr-ul-list mar-b-0">
-                        <p class="normal">Статус:</p>
-                        <li>Официальный партнер с 2007 года</li>
-                        </ul>
-                    </div>
+            <div class="panel-collapse collapse" id="partners-desc-1">
+                <div class="well kr-partner-well">
+                    <p><a class="bold" href="#">Cummins, Inc</a> — работает на российском ИТ-рынке с 1992
+                        года.
+                        Компетенция
+                        компании — все элементы информационной, телекоммуникационной и инженерной
+                        инфраструктуры
+                        и
+                        интеграционные связи
+                        между ними.</p>
+                    <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
+                        построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
+                        поставщиков
+                        в
+                        области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
+                        2012
+                        г.).
+                    <p>
+
+                        <ul class="kr-ul-list mar-b-0">
+                    <p class="normal">Статус:</p>
+                    <li>Официальный партнер с 2007 года</li>
+                    </ul>
                 </div>
-                <div class="panel-collapse collapse" id="partners-desc-4">
-                    <div class="well kr-partners-well">
-                        <p><a class="bold" href="#">Apple</a> — работает на российском ИТ-рынке с 1992
-                            года.
-                            Компетенция
-                            компании — все элементы информационной, телекоммуникационной и инженерной
-                            инфраструктуры
-                            и
-                            интеграционные связи
-                            между ними.</p>
-                        <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
-                            построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
-                            поставщиков
-                            в
-                            области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
-                            2012
-                            г.).
-                        <p>
+            </div>
+            <div class="panel-collapse collapse" id="partners-desc-2">
+                <div class="well kr-partners-well">
+                    <p><a class="bold" href="#">Yandex</a> — работает на российском ИТ-рынке с 1992
+                        года.
+                        Компетенция
+                        компании — все элементы информационной, телекоммуникационной и инженерной
+                        инфраструктуры
+                        и
+                        интеграционные связи
+                        между ними.</p>
+                    <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
+                        построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
+                        поставщиков
+                        в
+                        области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
+                        2012
+                        г.).
+                    <p>
 
-                            <ul class="kr-ul-list mar-b-0">
-                        <p class="normal">Статус:</p>
-                        <li>Официальный партнер с 2007 года</li>
-                        </ul>
-                    </div>
+                        <ul class="kr-ul-list mar-b-0">
+                    <p class="normal">Статус:</p>
+                    <li>Официальный партнер с 2007 года</li>
+                    </ul>
                 </div>
+            </div>
+            <div class="panel-collapse collapse" id="partners-desc-3">
+                <div class="well kr-partner-well">
+                    <p><a class="bold" href="#">Google</a> — работает на российском ИТ-рынке с 1992
+                        года.
+                        Компетенция
+                        компании — все элементы информационной, телекоммуникационной и инженерной
+                        инфраструктуры
+                        и
+                        интеграционные связи
+                        между ними.</p>
+                    <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
+                        построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
+                        поставщиков
+                        в
+                        области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
+                        2012
+                        г.).
+                    <p>
 
+                        <ul class="kr-ul-list mar-b-0">
+                    <p class="normal">Статус:</p>
+                    <li>Официальный партнер с 2007 года</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-collapse collapse" id="partners-desc-4">
+                <div class="well kr-partners-well">
+                    <p><a class="bold" href="#">Apple</a> — работает на российском ИТ-рынке с 1992
+                        года.
+                        Компетенция
+                        компании — все элементы информационной, телекоммуникационной и инженерной
+                        инфраструктуры
+                        и
+                        интеграционные связи
+                        между ними.</p>
+                    <p>Занял 1-е место в рейтинге крупнейших поставщиков в области комплексных проектов
+                        построения инфраструктуры ЦОД (СNews, 2012 г.), входит в десятку крупнейших
+                        поставщиков
+                        в
+                        области комплексных проектов построения инфраструктуры зданий и сооружений (СNews,
+                        2012
+                        г.).
+                    <p>
+
+                        <ul class="kr-ul-list mar-b-0">
+                    <p class="normal">Статус:</p>
+                    <li>Официальный партнер с 2007 года</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -708,133 +789,131 @@
     <!-- End accordion -->
 
     <!-- News -->
-    <div class="row">
-        <h1>Новости и события</h1>
-        <div class="press-box">
-            <ul class="nav navbar-nav nav-timeline mar-b-20 col-md-12">
-                <li class="active"><a href="#">2016</a></li>
-                <li><a href="#">2015</a></li>
-                <li><a href="#">2014</a></li>
-                <li><a href="#">2013</a></li>
-                <li><a href="#">2012</a></li>
-                <li><a href="#">2011</a></li>
-            </ul>
+
+    <h1>Новости и события</h1>
+    <div class="press-box">
+        <ul class="nav navbar-nav nav-timeline mar-b-20 col-md-12">
+            <li class="active"><a href="#">2016</a></li>
+            <li><a href="#">2015</a></li>
+            <li><a href="#">2014</a></li>
+            <li><a href="#">2013</a></li>
+            <li><a href="#">2012</a></li>
+            <li><a href="#">2011</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+        <h3 class="mar-t-20">Новости</h3>
+        <div class="news-card">
+            <p class="large text-gray">11 августа 2016</p>
+            <p><a href="press-news-details.html">Компания «Атлант Брокер» удвоила производительность
+                благодаря облаку КРОК на
+                базе
+                Cisco</a></p>
+            <p>Российская брокерская компания «Атлант — Финансовые Услуги» (бренд «Атлант Брокер»)
+                перенесла
+                комплексную CRM-систему в облако КРОК на базе технологий Cisco.</p>
         </div>
 
-        <div class="col-md-6">
-            <h3 class="mar-t-20">Новости</h3>
-            <div class="news-card">
-                <p class="large text-gray">11 августа 2016</p>
-                <p><a href="press-news-details.html">Компания «Атлант Брокер» удвоила производительность
-                    благодаря облаку КРОК на
-                    базе
-                    Cisco</a></p>
-                <p>Российская брокерская компания «Атлант — Финансовые Услуги» (бренд «Атлант Брокер»)
-                    перенесла
-                    комплексную CRM-систему в облако КРОК на базе технологий Cisco.</p>
-            </div>
-
-            <div class="news-card">
-                <p class="large text-gray">11 августа 2016</p>
-                <p><a href="press-news-details.html">Компания «Атлант Брокер» удвоила производительность
-                    благодаря облаку КРОК на
-                    базе
-                    Cisco</a></p>
-                <p>По некоторым оценкам, на обеспечение безопасности предприятия компании тратят 3–5% от
-                    общего
-                    дохода предприятия. В Краснодарском крае оборот сферы охранных услуг и безопасности
-                    может
-                    составлять 48 млрд рублей. Часть из этой суммы идет на информационные продукты и
-                    высокотехнологичное оборудование.</p>
-            </div>
-
-            <div class="news-card">
-                <p class="large text-gray">11 августа 2016</p>
-                <p><a href="press-news-details.html">Кубанские компании тратят до 5% доходов на
-                    высокотехнологичное
-                    оборудование</a>
-                </p>
-                <p>Любой торговый объект может столкнуться с ситуацией, когда не хватает внешних
-                    подключений, —
-                    они отсутствуют или не отвечают требованиям по надежности и качеству энергоснабжения. О
-                    том,
-                    как решить эти проблемы, наладив собственную генерацию электроэнергии, тепла и холода,
-                    рассказывает Денис Маркин, руководитель направления электромеханических систем компании
-                    «КРОК».</p>
-            </div>
+        <div class="news-card">
+            <p class="large text-gray">11 августа 2016</p>
+            <p><a href="press-news-details.html">Компания «Атлант Брокер» удвоила производительность
+                благодаря облаку КРОК на
+                базе
+                Cisco</a></p>
+            <p>По некоторым оценкам, на обеспечение безопасности предприятия компании тратят 3–5% от
+                общего
+                дохода предприятия. В Краснодарском крае оборот сферы охранных услуг и безопасности
+                может
+                составлять 48 млрд рублей. Часть из этой суммы идет на информационные продукты и
+                высокотехнологичное оборудование.</p>
         </div>
-        <div class="col-md-6">
-            <h3 class="mar-t-20">Мероприятия</h3>
 
-            <div class="news-card">
-                <p class="large text-gray">07 июня 2016 —<br>
-                    09 июня 2016</p>
-                <p><a href="press-news-details.html">XVII Всероссийская конференция «Состояние и перспективы
-                    развития энергетики
-                    связи»</a></p>
-                <p>
-                <div>#Мультиотраслевое</div>
-                <div>#Инженерная инфраструктура</div>
-                </p>
-            </div>
-
-            <div class="event-card">
-                <p class="large text-gray">07 июня 2016 —<br>
-                    09 июня 2016</p>
-                <p><a href="press-news-details.html">XVII Всероссийская конференция «Состояние и перспективы
-                    развития энергетики
-                    связи»</a></p>
-                <p>
-                <div>#Мультиотраслевое</div>
-                <div>#Инженерная инфраструктура</div>
-                </p>
-            </div>
-
-            <div class="event-card">
-                <p class="large text-gray">07 июня 2016 —<br>
-                    09 июня 2016</p>
-                <p><a href="press-news-details.html">XVII Всероссийская конференция «Состояние и перспективы
-                    развития энергетики
-                    связи»</a></p>
-                <p>
-                <div>#Мультиотраслевое</div>
-                <div>#Инженерная инфраструктура</div>
-                </p>
-            </div>
+        <div class="news-card">
+            <p class="large text-gray">11 августа 2016</p>
+            <p><a href="press-news-details.html">Кубанские компании тратят до 5% доходов на
+                высокотехнологичное
+                оборудование</a>
+            </p>
+            <p>Любой торговый объект может столкнуться с ситуацией, когда не хватает внешних
+                подключений, —
+                они отсутствуют или не отвечают требованиям по надежности и качеству энергоснабжения. О
+                том,
+                как решить эти проблемы, наладив собственную генерацию электроэнергии, тепла и холода,
+                рассказывает Денис Маркин, руководитель направления электромеханических систем компании
+                «КРОК».</p>
         </div>
     </div>
+    <div class="col-md-6">
+        <h3 class="mar-t-20">Мероприятия</h3>
+
+        <div class="news-card">
+            <p class="large text-gray">07 июня 2016 —<br>
+                09 июня 2016</p>
+            <p><a href="press-news-details.html">XVII Всероссийская конференция «Состояние и перспективы
+                развития энергетики
+                связи»</a></p>
+            <p>
+            <div>#Мультиотраслевое</div>
+            <div>#Инженерная инфраструктура</div>
+            </p>
+        </div>
+
+        <div class="event-card">
+            <p class="large text-gray">07 июня 2016 —<br>
+                09 июня 2016</p>
+            <p><a href="press-news-details.html">XVII Всероссийская конференция «Состояние и перспективы
+                развития энергетики
+                связи»</a></p>
+            <p>
+            <div>#Мультиотраслевое</div>
+            <div>#Инженерная инфраструктура</div>
+            </p>
+        </div>
+
+        <div class="event-card">
+            <p class="large text-gray">07 июня 2016 —<br>
+                09 июня 2016</p>
+            <p><a href="press-news-details.html">XVII Всероссийская конференция «Состояние и перспективы
+                развития энергетики
+                связи»</a></p>
+            <p>
+            <div>#Мультиотраслевое</div>
+            <div>#Инженерная инфраструктура</div>
+            </p>
+        </div>
+    </div>
+
     <!-- End news -->
 
     <!-- Contacts -->
 
-    <div class="row">
-        <h1>Контакты</h1>
-        <div class="col-md-5">
-            <img class="img-responsive pad-b-40"
-                 srcset="images/contact-image-@2x.png 2x,
-                     images/contact-image-@1x.png 1x"
-                 src="images/contact-image-@1x.png" alt=""/>
-        </div>
-        <div class="col-md-7">
-            <a class="noline" href="#">111033, Москва, ул. Волочаевская, д. 5, корп. 1</a>
+    <h1>Контакты</h1>
+    <div class="col-md-5">
+        <img class="img-responsive pad-b-40"
+             srcset="images/contact-image-@2x.png 2x,
+                 images/contact-image-@1x.png 1x"
+             src="images/contact-image-@1x.png" alt=""/>
+    </div>
+    <div class="col-md-7">
+        <a class="noline" href="#">111033, Москва, ул. Волочаевская, д. 5, корп. 1</a>
 
-            <h2 class="mar-b-0">+7 495 974-22-74</h2>
-            <h2 class="mar-t-10 mar-b-10">+7 495 797-47-99</h2>
+        <h2 class="mar-b-0">+7 495 974-22-74</h2>
+        <h2 class="mar-t-10 mar-b-10">+7 495 797-47-99</h2>
 
-            <p>По будням с 9:00 до 23:00<br>
-                Попросите соединить вас со специалистом «горячей линии»</p>
+        <p>По будням с 9:00 до 23:00<br>
+            Попросите соединить вас со специалистом «горячей линии»</p>
 
-            <h3>+7 495 974-22-77 <span class="micro">(факс)</span></h3>
+        <h3>+7 495 974-22-77 <span class="micro">(факс)</span></h3>
 
-            <p><a href="mailto:info@croc.ru" class="noline">info@croc.ru</a><br>
-                Все письма внимательно прочитываются</p>
-
-
-            <p class="bold mar-t-20">КРОК в соцсетях</p>
-            <img src="images/social-placeholder.png">
+        <p><a href="mailto:info@croc.ru" class="noline">info@croc.ru</a><br>
+            Все письма внимательно прочитываются</p>
 
 
-        </div>
+        <p class="bold mar-t-20">КРОК в соцсетях</p>
+        <img src="images/social-placeholder.png">
+
+
     </div>
 
     <!-- End contacts -->
@@ -845,6 +924,7 @@
 <script src="plugins/jquery-3.1.1.min.js"></script>
 <script src="plugins/bootstrap.min.js"></script>
 <script src="plugins/slick.min.js"></script>
+<script src="js/jquery.tokenize.js"></script>
 <script src="js/script.js"></script>
 <script src="plugins/picturefill.min.js" async></script>
 
