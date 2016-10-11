@@ -1,7 +1,7 @@
 /* Единственный $(document).ready(); */
 $(function() {
 	if ($.fn.selectFix) {
-		$('select:not(.kr-select)').selectFix({'container-max-height': 200, 'arrow': true, 'type': 'vertical'})
+		$('select:not(.form-control)').selectFix({'container-max-height': 200, 'arrow': true, 'type': 'vertical'})
 		$('.scrollpane-container-global.scrollpane-arrow.scroll-y').removeClass('scroll-y');
 	}
 	/* Для разукраски input[type="file"]*/
