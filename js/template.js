@@ -60,13 +60,13 @@ $(function() {
 		},500);
 	});
 
-	var navSelector = $('.nav-tabs li');
-
-	if (navSelector.length != 0) {
-
-		var num = navSelector.length;
-		var width = 100 / num;
-		navSelector.css('width', width + '%');
-
-	}
+	// var navSelector = $('.nav-tabs li');
+    //
+	// if (navSelector.length != 0) {
+    //
+	// 	var num = navSelector.length;
+	// 	var width = 100 / num;
+	// 	navSelector.css('width', width + '%');
+    //
+	// }
 });
